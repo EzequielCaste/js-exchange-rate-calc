@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exchange Rate Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <i class="material-icons">
+        cached
+      </i>
+      <h1>Exchange Rate Calculator</h1>
+    </header>
+    <main>
+      <p>Choose the currency and the amounts to get the exchange rate</p>
+      <div id="exchange-section">
+        <section id="firstCurrency">
+          <select name="currency1" id="currency1"></select>
+          <input id="amount" type="number" min="0" value="20" />
+        </section>
+        <section id="result">
+          <button id="swap">Swap</button>
+          <span id="rate"></span>
+        </section>
+        <section id="secondCurrency">
+          <select name="currency2" id="currency2"></select>
+          <input type="number" id="display" step="0.01" />
+        </section>
+      </div>
+    </main>
+    <script src="main3.js"></script>
+  </body>
+</html>
